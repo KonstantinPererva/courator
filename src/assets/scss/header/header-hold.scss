@@ -1,0 +1,21 @@
+.header-hold {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    margin: 0 0 8px;
+  }
+
+  &__slogan {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}

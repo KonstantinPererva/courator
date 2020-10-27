@@ -1,0 +1,11 @@
+.section {
+  padding: 70px 0;
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+  }
+
+  &_bg {
+    background: #0B0C0D;
+  }
+}

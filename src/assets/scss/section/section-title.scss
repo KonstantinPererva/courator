@@ -1,0 +1,34 @@
+.section-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 47px;
+  text-transform: uppercase;
+  background-repeat: repeat;
+  margin: 0 0 3px;
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  & + .wr-section-box, & + .section-hold {
+    margin-top: 10px;
+  }
+  
+  & span {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(/assets/img/bg-title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+}
+
+.wr-title {
+}

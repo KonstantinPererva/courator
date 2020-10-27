@@ -1,0 +1,31 @@
+.section-box-gradient {
+  position: relative;
+
+  &:after, &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    top: 0;
+    width: calc(100vw / 2 - 560px / 2);
+
+    @media (max-width: 991px) {
+      width: calc(100vw / 2 - 288px / 2);
+    }
+
+    @media (max-width: 400px) {
+      width: calc(100vw / 2 - 240px / 2);
+    }
+  }
+
+  &:before {
+    left: calc(100% - 10px);
+    background: linear-gradient(-270deg, rgba(0, 0, 0, 0.91) 0.54%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &:after {
+    right: calc(100% - 10px);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.91) 0.54%, rgba(0, 0, 0, 0) 100%);
+  }
+}
