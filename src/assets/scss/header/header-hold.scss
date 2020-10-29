@@ -7,6 +7,15 @@
 
   &__logo {
     margin: 0 0 8px;
+    
+    @media ($media1) {
+      margin: 0 0 sizeIns(8,px);
+
+      & svg {
+        width: auto;
+        height: sizeIns(29,px);
+      }
+    }
   }
 
   &__slogan {
@@ -17,5 +26,11 @@
     line-height: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media ($media1) {
+      font-size: sizeIns(8,px);
+      line-height: sizeIns(12,px);
+    }
   }
+
 }

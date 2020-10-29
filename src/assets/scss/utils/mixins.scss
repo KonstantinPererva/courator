@@ -70,3 +70,9 @@
 @mixin fzEl($fzStart, $fzCurrent) {
   font-size: calc(#{$fzCurrent} / #{$fzStart} * 1rem);
 }
+
+@function sizeIns($size, $v) {
+  $size: $size * 1.5 + $v;
+
+  @return $size;
+}

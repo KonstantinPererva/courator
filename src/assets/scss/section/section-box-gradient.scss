@@ -10,6 +10,10 @@
     top: 0;
     width: calc(100vw / 2 - 560px / 2);
 
+    @media ($media1) {
+      width: calc(100vw / 2 - #{sizeIns(540,px)} / 2);
+    }
+
     @media (max-width: 991px) {
       width: calc(100vw / 2 - 288px / 2);
     }

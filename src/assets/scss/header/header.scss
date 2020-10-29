@@ -1,4 +1,8 @@
 .header {
   height: 85px;
   background: linear-gradient(0deg, #191C21, #191C21), #325BE9;
+
+  @media ($media1) {
+    height: sizeIns(85,px);
+  }
 }
