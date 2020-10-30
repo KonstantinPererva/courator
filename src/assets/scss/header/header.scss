@@ -2,7 +2,23 @@
   height: 85px;
   background: linear-gradient(0deg, #191C21, #191C21), #325BE9;
 
+  @media ($media3) {
+    height: sizeIns(85,px,$media3);
+  }
+
+  @media ($media2) {
+    height: sizeIns(85,px,$media2);
+  }
+
   @media ($media1) {
-    height: sizeIns(85,px);
+    height: sizeIns(85,px,$media1);
+  }
+
+  @media ($media4) {
+    height: sizeIns(85,px,$media4);
+  }
+
+  @media ($media5) {
+    height: sizeIns(85,px,$media5);
   }
 }

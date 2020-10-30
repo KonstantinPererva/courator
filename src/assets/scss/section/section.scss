@@ -1,12 +1,24 @@
 .section {
   padding: 70px 0;
 
-  @media ($media1) {
-    padding: sizeIns(70,px) 0;
+  @media ($media3) {
+    padding: sizeIns(70,px,$media3) 0;
   }
 
-  @media (max-width: 991px) {
-    padding: 40px 0;
+  @media ($media2) {
+    padding: sizeIns(70,px,$media2) 0;
+  }
+
+  @media ($media1) {
+    padding: sizeIns(70,px,$media1) 0;
+  }
+
+  @media ($media4) {
+    padding: sizeIns(40,px,$media4) 0;
+  }
+
+  @media ($media5) {
+    padding: sizeIns(40,px,$media5) 0;
   }
 
   &_bg {

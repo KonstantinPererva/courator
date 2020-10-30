@@ -1,1 +1,33 @@
 $media1: 'min-width: 1440px';
+$media2: 'min-width: 1200px';
+$media3: 'min-width: 992px';
+$media4: 'max-width: 991px';
+$media5: 'max-width: 640px';
+
+@function ins($media) {
+  $var: 1;
+  @if($media == $media1){
+    $var: 1.5;
+  }
+  @elseif($media == $media2){
+    $var: 1.35;
+  }
+  @elseif($media == $media3){
+    $var: 1.2;
+  }
+  @elseif($media == $media4){
+    $var: 1.4;
+  }
+  @elseif($media == $media5){
+    $var: 1.2;
+  }
+
+  @return $var;
+}
+
+@function sizeIns($size, $val, $media) {
+  $size: $size * ins($media) + $val;
+
+  @return $size;
+}
+

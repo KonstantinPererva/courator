@@ -1,5 +1,25 @@
 html {
   font-size: 14px;
+
+  @media ($media3) {
+    font-size: sizeIns(14,px,$media3);
+  }
+
+  @media ($media2) {
+    font-size: sizeIns(14,px,$media2);
+  }
+
+  @media ($media1) {
+    font-size: sizeIns(14,px,$media1);
+  }
+
+  @media ($media4) {
+    font-size: sizeIns(14,px,$media4);
+  }
+
+  @media ($media5) {
+    font-size: sizeIns(14,px,$media5);
+  }
 }
 html, body {
   height: 100%;
@@ -42,22 +62,4 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-}
-
-.box-desktop {
-  display: block !important;
-}
-
-.box-mob {
-  display: none !important;
-}
-
-@media (max-width: 991px) {
-  .box-desktop {
-    display: none !important;
-  }
-
-  .box-mob {
-    display: block !important;
-  }
 }

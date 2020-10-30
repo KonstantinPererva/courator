@@ -4,45 +4,85 @@
   border-radius: 5px;
   width: 100%;
 
-  @media ($media1) {
-    border-radius: sizeIns(5,px);
+  @media ($media3) {
+    border-radius: sizeIns(5,px,$media3);
   }
 
-  @media (max-width: 991px) {
-    font-size: 10px;
+  @media ($media2) {
+    border-radius: sizeIns(5,px,$media2);
+  }
+
+  @media ($media1) {
+    border-radius: sizeIns(5,px,$media1);
+  }
+
+  @media ($media4) {
+    font-size: sizeIns(10,px,$media4);
+  }
+
+  @media ($media5) {
+    font-size: sizeIns(10,px,$media5);
   }
 
   &_big {
     max-width: 540px;
     padding: 30px;
 
+    @media ($media3) {
+      max-width: sizeIns(540,px,$media3);
+      padding: sizeIns(30,px,$media3);
+    }
+
+    @media ($media2) {
+      max-width: sizeIns(540,px,$media2);
+      padding: sizeIns(30,px,$media2);
+    }
+
     @media ($media1) {
-      max-width: sizeIns(540,px);
-      padding: sizeIns(30,px);
+      max-width: sizeIns(540,px,$media1);
+      padding: sizeIns(30,px,$media1);
     }
 
-    @media (max-width: 991px) {
-      max-width: 268px;
-      padding: 20px;
+    @media ($media4) {
+      max-width: sizeIns(268,px,$media4);
+      padding: sizeIns(20,px,$media4);
     }
 
-    @media (max-width: 400px) {
+    @media ($media5) {
+      max-width: sizeIns(268,px,$media5);
+      padding: sizeIns(20,px,$media5);
+    }
+
+    @media (max-width: 420px) {
       max-width: 220px;
+      padding: 20px;
     }
   }
 
   &_md {
     padding: 30px;
 
+    @media ($media3) {
+      padding: sizeIns(30,px,$media3);
+    }
+
+    @media ($media2) {
+      padding: sizeIns(30,px,$media2);
+    }
+
     @media ($media1) {
-      padding: sizeIns(30,px);
+      padding: sizeIns(30,px,$media1);
     }
 
-    @media (max-width: 991px) {
-      padding: 20px;
+    @media ($media4) {
+      padding: sizeIns(20,px,$media4);
     }
 
-    @media (max-width: 400px) {
+    @media ($media5) {
+      padding: sizeIns(20,px,$media5);
+    }
+
+    @media (max-width: 420px) {
       max-width: 220px;
     }
   }
@@ -50,26 +90,38 @@
   &_sm {
     padding: 20px;
 
+    @media ($media3) {
+      padding: sizeIns(20,px,$media3);
+    }
+
+    @media ($media2) {
+      padding: sizeIns(20,px,$media2);
+    }
+
     @media ($media1) {
-      padding: sizeIns(20,px);
+      padding: sizeIns(20,px,$media1);
     }
 
-    @media (max-width: 991px) {
-      padding: 16px;
+    @media ($media4) {
+      padding: sizeIns(16,px,$media4);
     }
 
-    @media (max-width: 479px) {
+    @media ($media5) {
+      padding: sizeIns(16,px,$media5);
+    }
+
+    @media (max-width: 639px) {
       padding: 20px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       max-width: 220px;
     }
   }
 
   &_mob-w {
-    @media (max-width: 400px) {
-      max-width: 260px;
+    @media (max-width: 420px) {
+      max-width: 300px;
     }
   }
 
@@ -82,15 +134,27 @@
 .grid-2 {
   @include grid(2,30px,1px);
 
+  @media ($media3) {
+    @include grid(2,sizeIns(30,px,$media3),1px);
+  }
+
+  @media ($media2) {
+    @include grid(2,sizeIns(30,px,$media2),1px);
+  }
+
   @media ($media1) {
-    @include grid(2,sizeIns(30,px),1px);
+    @include grid(2,sizeIns(30,px,$media1),1px);
   }
 
-  @media (max-width: 991px) {
-    @include grid(2,20px,1px);
+  @media ($media4) {
+    @include grid(2,sizeIns(20,px,$media4),1px);
   }
 
-  @media (max-width: 479px) {
+  @media ($media5) {
+    @include grid(2,sizeIns(20,px,$media5),1px);
+  }
+
+  @media (max-width: 639px) {
     max-width: 268px;
     width: 100%;
     margin: 0 0 20px !important;
@@ -98,21 +162,37 @@
     &:last-child {
       margin: 0!important;
     }
+  }
+
+  @media (max-width: 420px) {
+    max-width: 220px;
   }
 }
 
 .grid-3 {
   @include grid(3,30px,1px);
 
+  @media ($media3) {
+    @include grid(3,sizeIns(30,px,$media3),1px);
+  }
+
+  @media ($media2) {
+    @include grid(3,sizeIns(30,px,$media2),1px);
+  }
+
   @media ($media1) {
-    @include grid(3,sizeIns(30,px),1px);
+    @include grid(3,sizeIns(30,px,$media1),1px);
   }
 
-  @media (max-width: 991px) {
-    @include grid(3,20px,1px);
+  @media ($media4) {
+    @include grid(3,sizeIns(20,px,$media4),1px);
   }
 
-  @media (max-width: 479px) {
+  @media ($media5) {
+    @include grid(3,sizeIns(20,px,$media5),1px);
+  }
+
+  @media (max-width: 639px) {
     max-width: 268px;
     width: 100%;
     margin: 0 0 20px !important;
@@ -120,6 +200,10 @@
     &:last-child {
       margin: 0!important;
     }
+  }
+
+  @media (max-width: 420px) {
+    max-width: 220px;
   }
 }
 

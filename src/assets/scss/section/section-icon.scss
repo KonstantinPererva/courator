@@ -1,3 +1,43 @@
 .section-icon {
   margin: 0 0 9px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    width: auto;
+    height: 100%;
+  }
+
+  @media ($media3) {
+    margin: 0 0 sizeIns(9,px,$media3);
+    width: sizeIns(18,px,$media3);
+    height: sizeIns(18,px,$media3);
+  }
+
+  @media ($media2) {
+    margin: 0 0 sizeIns(9,px,$media2);
+    width: sizeIns(18,px,$media2);
+    height: sizeIns(18,px,$media2);
+  }
+
+  @media ($media1) {
+    margin: 0 0 sizeIns(9,px,$media1);
+    width: sizeIns(18,px,$media1);
+    height: sizeIns(18,px,$media1);
+  }
+
+  @media ($media4) {
+    margin: 0 0 sizeIns(9,px,$media4);
+    width: sizeIns(18,px,$media4);
+    height: sizeIns(18,px,$media4);
+  }
+
+  @media ($media5) {
+    margin: 0 0 sizeIns(9,px,$media5);
+    width: sizeIns(18,px,$media5);
+    height: sizeIns(18,px,$media5);
+  }
 }

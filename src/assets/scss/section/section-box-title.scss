@@ -4,8 +4,21 @@
   font-size: 16px;
   line-height: 120%;
   color: #FFFFFF;
+  margin: 0 0 6px;
 
-  @media (max-width: 991px) {
-    font-size: 10px;
+  @media ($media3) {
+    font-size: sizeIns(16,px,$media3);
+  }
+
+  @media ($media2) {
+    font-size: sizeIns(16,px,$media2);
+  }
+
+  @media ($media1) {
+    font-size: sizeIns(16,px,$media1);
+  }
+
+  @media ($media4) {
+    font-size: sizeIns(10,px,$media4);
   }
 }

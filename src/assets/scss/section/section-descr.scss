@@ -5,12 +5,40 @@
   line-height: 120%;
   color: #FFFFFF;
 
-  @media (max-width: 991px) {
-    font-size: 10px;
+  @media ($media3) {
+    font-size: sizeIns(16,px,$media3);
+  }
+
+  @media ($media2) {
+    font-size: sizeIns(16,px,$media2);
+  }
+
+  @media ($media1) {
+    font-size: sizeIns(16,px,$media1);
+  }
+
+  @media ($media4) {
+    font-size: sizeIns(10,px,$media4);
   }
 
   & p {
     margin: 0 0 8px;
+
+    @media ($media3) {
+      margin: 0 0 sizeIns(8,px,$media3);
+    }
+
+    @media ($media2) {
+      margin: 0 0 sizeIns(8,px,$media2);
+    }
+
+    @media ($media1) {
+      margin: 0 0 sizeIns(8,px,$media1);
+    }
+
+    @media ($media4) {
+      margin: 0 0 sizeIns(8,px,$media4);
+    }
 
     &:last-child {
       margin: 0;
@@ -23,9 +51,29 @@
     font-size: 42px;
     line-height: 62px;
 
-    @media (max-width: 991px) {
-      font-size: 36px;
-      line-height: 53px;
+    @media ($media3) {
+      font-size: sizeIns(42,px,$media3);
+      line-height: sizeIns(62,px,$media3);
+    }
+
+    @media ($media2) {
+      font-size: sizeIns(42,px,$media2);
+      line-height: sizeIns(62,px,$media2);
+    }
+
+    @media ($media1) {
+      font-size: sizeIns(42,px,$media1);
+      line-height: sizeIns(62,px,$media1);
+    }
+
+    @media ($media4) {
+      font-size: sizeIns(36,px,$media4);
+      line-height: sizeIns(53,px,$media4);
+    }
+
+    @media ($media5) {
+      font-size: sizeIns(36,px,$media5);
+      line-height: sizeIns(53,px,$media5);
     }
   }
 
@@ -35,17 +83,50 @@
     font-size: 16px;
     line-height: 125%;
 
-    @media (max-width: 991px) {
-      font-size: 12px;
-      line-height: 18px;
+    @media ($media3) {
+      font-size: sizeIns(16,px,$media3);
+    }
+
+    @media ($media2) {
+      font-size: sizeIns(16,px,$media2);
+    }
+
+    @media ($media1) {
+      font-size: sizeIns(16,px,$media1);
+    }
+
+    @media ($media4) {
+      line-height: sizeIns(18,px,$media4);
+      font-size: sizeIns(12,px,$media4);
+    }
+
+    @media ($media5) {
+      line-height: sizeIns(18,px,$media5);
+      font-size: sizeIns(12,px,$media5);
     }
   }
 
   & .lh-w {
-    line-height: 20px;
+    line-height: 24px;
 
-    @media (max-width: 991px) {
-      line-height: 14.5px;
+    @media ($media3) {
+      line-height: sizeIns(24,px,$media3);
+    }
+
+    @media ($media2) {
+      line-height: sizeIns(24,px,$media2);
+    }
+
+    @media ($media1) {
+      line-height: sizeIns(24,px,$media1);
+    }
+
+    @media ($media4) {
+      line-height: sizeIns(14.5,px,$media4);
+    }
+
+    @media ($media5) {
+      line-height: sizeIns(14.5,px,$media5);
     }
   }
 }

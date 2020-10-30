@@ -8,13 +8,61 @@
   background-repeat: repeat;
   margin: 0 0 3px;
 
-  @media (max-width: 991px) {
+  @media ($media3) {
+    font-size: sizeIns(32,px,$media3);
+    line-height: sizeIns(47,px,$media3);
+    margin: 0 0 sizeIns(3,px,$media3);
+  }
+
+  @media ($media2) {
+    font-size: sizeIns(32,px,$media2);
+    line-height: sizeIns(47,px,$media2);
+    margin: 0 0 sizeIns(3,px,$media2);
+  }
+
+  @media ($media1) {
+    font-size: sizeIns(32,px,$media1);
+    line-height: sizeIns(47,px,$media1);
+    margin: 0 0 sizeIns(3,px,$media1);
+  }
+
+  @media ($media4) {
+    font-size: sizeIns(18,px,$media4);
+    line-height: sizeIns(27,px,$media4);
+  }
+
+  @media ($media5) {
+    font-size: sizeIns(18,px,$media5);
+    line-height: sizeIns(27,px,$media5);
+  }
+
+  @media (max-width: 639px) {
     font-size: 18px;
     line-height: 27px;
   }
 
   & + .wr-section-box, & + .section-hold {
     margin-top: 10px;
+
+    @media ($media3) {
+      margin-top: sizeIns(10,px,$media3);
+    }
+
+    @media ($media2) {
+      margin-top: sizeIns(10,px,$media2);
+    }
+
+    @media ($media1) {
+      margin-top: sizeIns(10,px,$media1);
+    }
+
+    @media ($media4) {
+      margin-top: sizeIns(10,px,$media4);
+    }
+
+    @media ($media5) {
+      margin-top: sizeIns(10,px,$media5);
+    }
   }
   
   & span {

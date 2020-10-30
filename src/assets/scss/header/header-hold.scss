@@ -8,12 +8,48 @@
   &__logo {
     margin: 0 0 8px;
     
-    @media ($media1) {
-      margin: 0 0 sizeIns(8,px);
+    @media ($media3) {
+      margin: 0 0 sizeIns(8,px,$media3);
 
       & svg {
         width: auto;
-        height: sizeIns(29,px);
+        height: sizeIns(29,px,$media3);
+      }
+    }
+
+    @media ($media2) {
+      margin: 0 0 sizeIns(8,px,$media2);
+
+      & svg {
+        width: auto;
+        height: sizeIns(29,px,$media2);
+      }
+    }
+
+    @media ($media1) {
+      margin: 0 0 sizeIns(8,px,$media1);
+
+      & svg {
+        width: auto;
+        height: sizeIns(29,px,$media1);
+      }
+    }
+
+    @media ($media4) {
+      margin: 0 0 sizeIns(8,px,$media4);
+
+      & svg {
+        width: auto;
+        height: sizeIns(29,px,$media4);
+      }
+    }
+
+    @media ($media5) {
+      margin: 0 0 sizeIns(8,px,$media5);
+
+      & svg {
+        width: auto;
+        height: sizeIns(29,px,$media5);
       }
     }
   }
@@ -27,9 +63,29 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
+    @media ($media3) {
+      font-size: sizeIns(8,px,$media3);
+      line-height: sizeIns(12,px,$media3);
+    }
+
+    @media ($media2) {
+      font-size: sizeIns(8,px,$media2);
+      line-height: sizeIns(12,px,$media2);
+    }
+
     @media ($media1) {
-      font-size: sizeIns(8,px);
-      line-height: sizeIns(12,px);
+      font-size: sizeIns(8,px,$media1);
+      line-height: sizeIns(12,px,$media1);
+    }
+
+    @media ($media4) {
+      font-size: sizeIns(8,px,$media4);
+      line-height: sizeIns(12,px,$media4);
+    }
+
+    @media ($media5) {
+      font-size: sizeIns(8,px,$media5);
+      line-height: sizeIns(12,px,$media5);
     }
   }
 
